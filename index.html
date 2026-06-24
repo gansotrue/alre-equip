@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alre Equipamentos — Guindastes e Caminhões Munck em Várzea Grande/MT</title>
+  <meta name="description" content="Venda de guindastes Munck, caminhões com guindaste e carrocerias sob medida. Representante oficial HYVA. Várzea Grande/MT.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ── Spec table ── */
+    .spec-table{width:100%;border-collapse:collapse;margin-top:12px}
+    .spec-table td{padding:7px 10px;font-size:13px;border-bottom:1px solid rgba(255,255,255,.08);color:var(--alre-white)}
+    .spec-table td:first-child{color:var(--alre-orange);font-weight:600;width:48%;text-transform:uppercase;font-size:12px;letter-spacing:.05em}
+    .spec-table tr:last-child td{border-bottom:none}
+
+    /* ── Equipment cards (Grimaldi-style) ── */
+    .equip-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:2px;margin-top:2px}
+    .equip-card{position:relative;overflow:hidden;background:var(--alre-dark);cursor:pointer}
+    .equip-card img{width:100%;height:280px;object-fit:cover;display:block;transition:transform .5s ease;filter:brightness(.85)}
+    .equip-card:hover img{transform:scale(1.04);filter:brightness(1)}
+    .equip-card-body{padding:20px 24px 24px}
+    .equip-card-tag{display:inline-block;background:var(--alre-orange);color:#000;font-size:11px;font-weight:700;letter-spacing:.12em;padding:3px 10px;text-transform:uppercase;margin-bottom:10px}
+    .equip-card-tag.used{background:#444;color:var(--alre-white)}
+    .equip-card-name{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:800;color:var(--alre-white);text-transform:uppercase;line-height:1.1;margin-bottom:8px}
+    .equip-card-sub{font-size:13px;color:rgba(255,255,255,.55);margin-bottom:14px}
+    .equip-cta{display:inline-flex;align-items:center;gap:8px;background:var(--alre-orange);color:#000;font-size:13px;font-weight:700;padding:10px 20px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:opacity .2s}
+    .equip-cta:hover{opacity:.85}
+    .equip-cta svg{flex-shrink:0}
+
+    /* ── Contact strip ── */
+    .contact-strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:0;background:var(--alre-orange)}
+    .contact-strip-item{padding:32px 36px;border-right:1px solid rgba(0,0,0,.12);display:flex;flex-direction:column;gap:6px}
+    .contact-strip-item:last-child{border-right:none}
+    .contact-strip-label{font-size:11px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:rgba(0,0,0,.6)}
+    .contact-strip-val{font-family:'Barlow Condensed',sans-serif;font-size:26px;font-weight:800;color:#000;line-height:1;text-decoration:none}
+    .contact-strip-val:hover{text-decoration:underline}
+
+    /* hero override for real photo background */
+    #hero{min-height:90vh;display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:80px;position:relative;overflow:hidden}
+    .hero-photo{position:absolute;inset:0;background:url('img-frota.jpg') center/cover no-repeat;filter:brightness(.35)}
+    .hero-content{position:relative;z-index:2}
+  </style>
+</head>
+<body>
+<nav class="alre-nav">
+  <a href="index.html" class="nav-logo">
+    <img src="alre-logo.jpeg" alt="Alre Equipamentos logo">
+    <span class="nav-logo-text">ALRE <span>EQUIP.</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="sobre.html">Sobre</a></li>
+    <li><a href="servicos.html">Serviços</a></li>
+    <li><a href="equipamentos.html">Equipamentos</a></li>
+    <li><a href="carrocerias.html">Carrocerias</a></li>
+    <li><a href="seguranca.html">Segurança</a></li>
+    <li><a href="parcerias.html">Parcerias</a></li>
+    <li><a href="contato.html" class="nav-cta">Solicitar Orçamento</a></li>
+  </ul>
+  <button class="nav-toggle" aria-label="Menu">Menu</button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-photo"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Representante Oficial HYVA &middot; Várzea Grande, MT</p>
+    <h1 class="hero-title">GUINDASTES<br>E CAMINHÕES<br>MUNCK PARA<br><em>TRABALHO PESADO.</em></h1>
+    <p class="hero-subtitle">Estoque disponível de caminhões com guindaste e guindastes avulsos. Venda, instalação, manutenção e peças originais — tudo em um só lugar.</p>
+    <div class="hero-actions">
+      <a href="contato.html" class="btn-primary">Solicitar Orçamento</a>
+      <a href="equipamentos.html" class="btn-ghost">Ver Estoque</a>
+    </div>
+    <div class="hero-stats">
+      <div><div class="hero-stat-num">500+</div><div class="hero-stat-label">Equipamentos instalados</div></div>
+      <div><div class="hero-stat-num">15</div><div class="hero-stat-label">Anos de experiência</div></div>
+      <div><div class="hero-stat-num">Multi</div><div class="hero-stat-label">Marcas: HYVA, TKA, PHD, Argos, Palfinger</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT STRIP — explícito no topo -->
+<div class="contact-strip">
+  <div class="contact-strip-item">
+    <span class="contact-strip-label">WhatsApp / Telefone</span>
+    <a href="https://wa.me/5565981269992" class="contact-strip-val">(65) 98126-9992</a>
+  </div>
+  <div class="contact-strip-item">
+    <span class="contact-strip-label">E-mail</span>
+    <a href="mailto:Alexandre.Podlasinski@alreequipamentos.com.br" class="contact-strip-val" style="font-size:16px;padding-top:6px">Alexandre.Podlasinski@<br>alreequipamentos.com.br</a>
+  </div>
+  <div class="contact-strip-item">
+    <span class="contact-strip-label">Atendimento</span>
+    <span class="contact-strip-val" style="font-size:18px;padding-top:4px">Seg–Sex 08h–18h<br>Sáb 08h–12h</span>
+  </div>
+  <div class="contact-strip-item" style="justify-content:center">
+    <a href="contato.html" class="equip-cta" style="background:#000;color:var(--alre-orange);align-self:center">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.88 9.64a19.79 19.79 0 01-3.07-8.67A2 2 0 012.77 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.64a16 16 0 006.29 6.29l1.1-1.1a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      Falar com Especialista
+    </a>
+  </div>
+</div>
+
+<div class="hyva-bar">
+  <div class="hyva-bar-inner">
+    <span class="hyva-bar-item">Representante Oficial HYVA</span><span class="hyva-bar-dot"></span>
+    <span class="hyva-bar-item">Munck TKA · PHD · Argos · Palfinger</span><span class="hyva-bar-dot"></span>
+    <span class="hyva-bar-item">Caminhões com Guindaste</span><span class="hyva-bar-dot"></span>
+    <span class="hyva-bar-item">Carrocerias Sob Medida</span><span class="hyva-bar-dot"></span>
+    <span class="hyva-bar-item">Instalação Certificada</span><span class="hyva-bar-dot"></span>
+    <span class="hyva-bar-item">Peças Originais</span><span class="hyva-bar-dot"></span>
+    <span class="hyva-bar-item">Suporte Técnico</span><span class="hyva-bar-dot"></span>
+    <span class="hyva-bar-item">Representante Oficial HYVA</span><span class="hyva-bar-dot"></span>
+    <span class="hyva-bar-item">Munck TKA · PHD · Argos · Palfinger</span><span class="hyva-bar-dot"></span>
+    <span class="hyva-bar-item">Caminhões com Guindaste</span><span class="hyva-bar-dot"></span>
+    <span class="hyva-bar-item">Carrocerias Sob Medida</span><span class="hyva-bar-dot"></span>
+    <span class="hyva-bar-item">Instalação Certificada</span><span class="hyva-bar-dot"></span>
+    <span class="hyva-bar-item">Peças Originais</span><span class="hyva-bar-dot"></span>
+    <span class="hyva-bar-item">Suporte Técnico</span><span class="hyva-bar-dot"></span>
+  </div>
+</div>
+
+<!-- ESTOQUE EM DESTAQUE -->
+<section style="background:var(--alre-dark);padding:0">
+  <div style="padding:60px 5vw 40px">
+    <p class="section-eyebrow">Pronta entrega · Várzea Grande/MT</p>
+    <h2 class="section-title">ESTOQUE DISPONÍVEL</h2>
+    <p class="section-body" style="max-width:600px">Caminhões com guindaste e guindastes avulsos prontos para trabalhar. Clique em qualquer equipamento para ver todas as especificações técnicas.</p>
+  </div>
+  <div class="equip-grid">
+    <!-- Mercedes + Argos -->
+    <div class="equip-card reveal">
+      <img src="img-mercedes-argos.jpg" alt="Mercedes-Benz Axor 1718 com Munck Argos 20.5">
+      <div class="equip-card-body">
+        <span class="equip-card-tag">Caminhão + Guindaste</span>
+        <div class="equip-card-name">Mercedes-Benz Axor 1718<br>+ Munck Argos 20.5</div>
+        <div class="equip-card-sub">Ano caminhão 2009 · Guindaste 2013</div>
+        <table class="spec-table">
+          <tr><td>Capacidade (a 4 m)</td><td>~5 toneladas</td></tr>
+          <tr><td>Alcance máximo</td><td>16 metros</td></tr>
+          <tr><td>Lanças</td><td>3H + 2M</td></tr>
+          <tr><td>Carroceria</td><td>6 metros</td></tr>
+        </table>
+        <a href="contato.html" class="equip-cta" style="margin-top:18px">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.88 9.64a19.79 19.79 0 01-3.07-8.67A2 2 0 012.77 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.64a16 16 0 006.29 6.29l1.1-1.1a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          Tenho Interesse
+        </a>
+      </div>
+    </div>
+    <!-- Ford + TKA -->
+    <div class="equip-card reveal">
+      <img src="img-ford-tka.jpg" alt="Ford Cargo 1723 com Munck TKA 20.700">
+      <div class="equip-card-body">
+        <span class="equip-card-tag">Caminhão + Guindaste</span>
+        <div class="equip-card-name">Ford Cargo 1723<br>+ Munck TKA 20.700</div>
+        <div class="equip-card-sub">Ano caminhão 2014 · Guindaste 2024</div>
+        <table class="spec-table">
+          <tr><td>Capacidade (a 4 m)</td><td>~5 toneladas</td></tr>
+          <tr><td>Alcance máximo</td><td>16 metros</td></tr>
+          <tr><td>Carroceria</td><td>6,20 m · ferro e prancha</td></tr>
+          <tr><td>Extras</td><td>Ar cond. · Controle remoto</td></tr>
+        </table>
+        <a href="contato.html" class="equip-cta" style="margin-top:18px">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.88 9.64a19.79 19.79 0 01-3.07-8.67A2 2 0 012.77 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.64a16 16 0 006.29 6.29l1.1-1.1a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          Tenho Interesse
+        </a>
+      </div>
+    </div>
+    <!-- VW + PHD -->
+    <div class="equip-card reveal">
+      <img src="img-vw-phd.jpg" alt="VW Constellation 23.220 com Munck PHD 42.007">
+      <div class="equip-card-body">
+        <span class="equip-card-tag">Caminhão + Guindaste</span>
+        <div class="equip-card-name">VW Constellation 23.220<br>+ Munck PHD 42.007</div>
+        <div class="equip-card-sub">Ano caminhão 2005 · Com controle remoto</div>
+        <table class="spec-table">
+          <tr><td>Capacidade (a 4 m)</td><td>~9,5 toneladas</td></tr>
+          <tr><td>Alcance máximo</td><td>21 metros</td></tr>
+          <tr><td>Carroceria</td><td>7,40 m · ferro e madeira</td></tr>
+          <tr><td>Extras</td><td>Controle remoto</td></tr>
+        </table>
+        <a href="contato.html" class="equip-cta" style="margin-top:18px">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.88 9.64a19.79 19.79 0 01-3.07-8.67A2 2 0 012.77 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.64a16 16 0 006.29 6.29l1.1-1.1a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          Tenho Interesse
+        </a>
+      </div>
+    </div>
+  </div>
+  <div style="padding:32px 5vw 60px;text-align:center">
+    <a href="equipamentos.html" class="btn-primary">Ver todo o estoque + guindastes avulsos</a>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section>
+  <div class="services-header">
+    <div class="reveal">
+      <p class="section-eyebrow">O que fazemos</p>
+      <h2 class="section-title">SOLUÇÕES<br>COMPLETAS</h2>
+    </div>
+    <a href="servicos.html" class="btn-ghost reveal">Ver todos os serviços</a>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal"><div class="service-num">01</div><div class="service-title">Venda de Guindastes</div><div class="service-desc">Guindastes articulados Munck: HYVA, TKA, PHD, Palfinger e Argos — novos e usados, avulsos ou montados em caminhão.</div></div>
+    <div class="service-card reveal"><div class="service-num">02</div><div class="service-title">Fabricação de Carrocerias</div><div class="service-desc">Carrocerias sob medida em aço certificado, com pintura automotiva para qualquer chassi.</div></div>
+    <div class="service-card reveal"><div class="service-num">03</div><div class="service-title">Instalação Certificada</div><div class="service-desc">Montagem profissional com procedimentos HYVA homologados e laudo técnico incluso.</div></div>
+    <div class="service-card reveal"><div class="service-num">04</div><div class="service-title">Manutenção Especializada</div><div class="service-desc">Assistência preventiva e corretiva com equipe qualificada e peças originais HYVA.</div></div>
+  </div>
+</section>
+
+<!-- ABOUT STRIP -->
+<section style="background:var(--alre-dark);display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center">
+  <div class="reveal">
+    <p class="section-eyebrow">Quem somos</p>
+    <h2 class="section-title">REFERÊNCIA EM EQUIPAMENTOS PESADOS</h2>
+    <p class="section-body" style="margin-top:20px">A Alre Equipamentos atua há mais de 15 anos fornecendo soluções completas para transporte de cargas pesadas em MT e região. Como representante oficial HYVA, entregamos tecnologia de classe mundial com o suporte de quem conhece a operação pesada brasileira.</p>
+    <a href="sobre.html" class="btn-ghost" style="margin-top:32px;display:inline-block">Conheça a Alre</a>
+  </div>
+  <div class="reveal">
+    <img src="img-mb-hyva.jpg" alt="Mercedes-Benz com guindaste HYVA — Alre Equipamentos" class="image-hero">
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-strip">
+  <div class="stat-item reveal"><div class="stat-num">500+</div><div class="stat-label">Equipamentos instalados</div></div>
+  <div class="stat-item reveal"><div class="stat-num">15</div><div class="stat-label">Anos de mercado</div></div>
+  <div class="stat-item reveal"><div class="stat-num">Multi</div><div class="stat-label">Marcas disponíveis</div></div>
+  <div class="stat-item reveal"><div class="stat-num">MT</div><div class="stat-label">e região atendidos</div></div>
+</div>
+
+<!-- CONTACT SECTION EXPLICITA -->
+<section style="background:var(--alre-orange)">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center">
+    <div class="reveal">
+      <p class="section-eyebrow" style="color:rgba(0,0,0,.6)">Não perca tempo</p>
+      <h2 class="section-title" style="color:#000">QUER SABER O VALOR?<br>FALE DIRETO COM A GENTE.</h2>
+      <p style="color:rgba(0,0,0,.75);font-size:15px;margin-top:16px;line-height:1.6">Não publicamos preços no site — cada negociação é única. Manda uma mensagem no WhatsApp ou preenche o formulário e a gente responde rápido com tudo que você precisa saber.</p>
+      <div style="display:flex;flex-direction:column;gap:12px;margin-top:32px">
+        <a href="https://wa.me/5565981269992" target="_blank" rel="noopener" class="equip-cta" style="background:#000;color:var(--alre-orange);width:fit-content">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.555 4.122 1.528 5.855L0 24l6.335-1.511A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.8 9.8 0 01-5.002-1.368l-.36-.214-3.76.896.944-3.653-.234-.374A9.787 9.787 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182c5.419 0 9.818 4.398 9.818 9.818 0 5.419-4.399 9.818-9.818 9.818z"/></svg>
+          WhatsApp: (65) 98126-9992
+        </a>
+        <a href="contato.html" class="equip-cta" style="background:#000;color:var(--alre-orange);width:fit-content">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><polyline points="2,3 12,13 22,3"/></svg>
+          Preencher Formulário de Orçamento
+        </a>
+      </div>
+    </div>
+    <div class="reveal" style="background:rgba(0,0,0,.15);padding:32px;border-radius:2px">
+      <p style="font-family:'Barlow Condensed',sans-serif;font-size:20px;font-weight:700;text-transform:uppercase;color:#000;margin-bottom:20px">Informações que agilizam o orçamento:</p>
+      <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px">
+        <li style="display:flex;gap:10px;color:rgba(0,0,0,.8);font-size:14px"><span style="color:#000;font-weight:700;font-size:18px">→</span> Qual equipamento te interessa (marca / modelo)</li>
+        <li style="display:flex;gap:10px;color:rgba(0,0,0,.8);font-size:14px"><span style="color:#000;font-weight:700;font-size:18px">→</span> Chassis ou caminhão que já tem (se for instalar)</li>
+        <li style="display:flex;gap:10px;color:rgba(0,0,0,.8);font-size:14px"><span style="color:#000;font-weight:700;font-size:18px">→</span> Capacidade de carga que precisa (em toneladas)</li>
+        <li style="display:flex;gap:10px;color:rgba(0,0,0,.8);font-size:14px"><span style="color:#000;font-weight:700;font-size:18px">→</span> Cidade / estado de entrega</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer class="alre-footer">
+  <a href="index.html" class="footer-logo">
+    <img src="alre-logo.jpeg" alt="Alre Equipamentos">
+    <span class="footer-logo-text">ALRE <span>EQUIP.</span></span>
+  </a>
+  <ul class="footer-links">
+    <li><a href="sobre.html">Sobre</a></li>
+    <li><a href="servicos.html">Serviços</a></li>
+    <li><a href="equipamentos.html">Equipamentos</a></li>
+    <li><a href="carrocerias.html">Carrocerias</a></li>
+    <li><a href="seguranca.html">Segurança</a></li>
+    <li><a href="parcerias.html">Parcerias</a></li>
+    <li><a href="contato.html">Contato</a></li>
+  </ul>
+  <span class="footer-copy">&copy; 2025 Alre Equipamentos · Várzea Grande/MT · (65) 98126-9992</span>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>

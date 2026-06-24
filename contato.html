@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato e Orçamento — Alre Equipamentos</title>
+  <meta name="description" content="Fale com a Alre Equipamentos. WhatsApp (65) 98126-9992. Orçamento sem compromisso para guindastes e caminhões Munck.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ── Prominent WA button ── */
+    .wa-btn{display:inline-flex;align-items:center;gap:12px;background:#25D366;color:#fff;font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:18px 36px;text-decoration:none;transition:filter .2s}
+    .wa-btn:hover{filter:brightness(1.1)}
+    .wa-btn svg{width:26px;height:26px;flex-shrink:0}
+
+    /* ── Channel cards ── */
+    .channel-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2px;margin-top:2px}
+    .channel-card{background:var(--alre-dark);padding:36px 32px;display:flex;flex-direction:column;gap:8px}
+    .channel-card-icon{width:44px;height:44px;background:var(--alre-orange);display:flex;align-items:center;justify-content:center;margin-bottom:8px;flex-shrink:0}
+    .channel-card-label{font-size:11px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.45)}
+    .channel-card-val{font-family:'Barlow Condensed',sans-serif;font-size:clamp(18px,2.2vw,26px);font-weight:800;color:var(--alre-white);line-height:1.1;text-decoration:none;word-break:break-word}
+    .channel-card-val:hover{color:var(--alre-orange)}
+    .channel-card-note{font-size:13px;color:rgba(255,255,255,.45);margin-top:4px}
+
+    /* ── Tips box ── */
+    .tips-box{background:#111;border-left:4px solid var(--alre-orange);padding:28px 32px}
+    .tips-box-title{font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;text-transform:uppercase;color:var(--alre-orange);margin-bottom:16px}
+    .tips-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px}
+    .tips-list li{display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,.7);line-height:1.5}
+    .tips-list li::before{content:"→";color:var(--alre-orange);font-weight:700;flex-shrink:0}
+
+    /* ── Contact form ── */
+    .contact-wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+    @media(max-width:860px){.contact-wrap{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<nav class="alre-nav">
+  <a href="index.html" class="nav-logo">
+    <img src="alre-logo.jpeg" alt="Alre Equipamentos logo">
+    <span class="nav-logo-text">ALRE <span>EQUIP.</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="sobre.html">Sobre</a></li>
+    <li><a href="servicos.html">Serviços</a></li>
+    <li><a href="equipamentos.html">Equipamentos</a></li>
+    <li><a href="carrocerias.html">Carrocerias</a></li>
+    <li><a href="seguranca.html">Segurança</a></li>
+    <li><a href="parcerias.html">Parcerias</a></li>
+    <li><a href="contato.html" class="active nav-cta">Solicitar Orçamento</a></li>
+  </ul>
+  <button class="nav-toggle" aria-label="Menu">Menu</button>
+</nav>
+
+<!-- PAGE HEADER -->
+<div class="page-header">
+  <p class="section-eyebrow">Fale direto com um especialista</p>
+  <h1>SOLICITE SEU <em>ORÇAMENTO</em></h1>
+  <p>Não publicamos valores no site — cada equipamento tem condições únicas de negociação. Manda uma mensagem que a gente responde rápido.</p>
+</div>
+
+<!-- BIG WHATSAPP CTA -->
+<section style="background:var(--alre-orange);text-align:center;padding:56px 5vw">
+  <p style="font-family:'Barlow Condensed',sans-serif;font-size:clamp(16px,2vw,22px);font-weight:700;text-transform:uppercase;color:rgba(0,0,0,.6);margin-bottom:16px">A forma mais rápida de receber um orçamento:</p>
+  <a href="https://wa.me/5565981269992" target="_blank" rel="noopener" class="wa-btn">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.555 4.122 1.528 5.855L0 24l6.335-1.511A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.8 9.8 0 01-5.002-1.368l-.36-.214-3.76.896.944-3.653-.234-.374A9.787 9.787 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182c5.419 0 9.818 4.398 9.818 9.818 0 5.419-4.399 9.818-9.818 9.818z"/></svg>
+    Chamar no WhatsApp: (65) 98126-9992
+  </a>
+  <p style="font-size:13px;color:rgba(0,0,0,.55);margin-top:16px">Seg–Sex 08h–18h · Sáb 08h–12h</p>
+</section>
+
+<!-- CHANNELS -->
+<div class="channel-cards">
+  <div class="channel-card">
+    <div class="channel-card-icon">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.88 9.64a19.79 19.79 0 01-3.07-8.67A2 2 0 012.77 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.64a16 16 0 006.29 6.29l1.1-1.1a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+    </div>
+    <span class="channel-card-label">WhatsApp / Telefone</span>
+    <a href="https://wa.me/5565981269992" target="_blank" rel="noopener" class="channel-card-val">(65) 98126-9992</a>
+    <span class="channel-card-note">Resposta mais rápida. Manda uma foto do seu caminhão ou descreve o que precisa.</span>
+  </div>
+  <div class="channel-card">
+    <div class="channel-card-icon">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+    </div>
+    <span class="channel-card-label">E-mail</span>
+    <a href="mailto:Alexandre.Podlasinski@alreequipamentos.com.br" class="channel-card-val" style="font-size:clamp(13px,1.4vw,17px)">Alexandre.Podlasinski@<br>alreequipamentos.com.br</a>
+    <span class="channel-card-note">Ideal para envio de documentações ou propostas formais.</span>
+  </div>
+  <div class="channel-card">
+    <div class="channel-card-icon">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+    </div>
+    <span class="channel-card-label">Endereço</span>
+    <span class="channel-card-val" style="font-size:clamp(14px,1.5vw,18px)">Av. Ulisses Pompeu de Campos, 3000, Sala 1</span>
+    <span class="channel-card-note">Bairro Glória · CEP 78.140-002 · Várzea Grande / MT</span>
+  </div>
+  <div class="channel-card">
+    <div class="channel-card-icon">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+    </div>
+    <span class="channel-card-label">Horário de atendimento</span>
+    <span class="channel-card-val" style="font-size:clamp(16px,1.8vw,22px)">Seg–Sex: 08h às 18h</span>
+    <span class="channel-card-note">Sábado: 08h às 12h · Fora do horário, mande WhatsApp que retornamos.</span>
+  </div>
+</div>
+
+<!-- FORM + TIPS -->
+<section id="contato">
+  <div class="contact-wrap">
+    <!-- Tips -->
+    <div class="reveal">
+      <p class="section-eyebrow">Para agilizar</p>
+      <h2 class="section-title" style="font-size:clamp(28px,4vw,48px)">O QUE<br>INFORMAR?</h2>
+      <p class="section-body" style="margin-top:12px">Quanto mais você descreve a necessidade, mais rápido a gente monta o orçamento certo.</p>
+
+      <div class="tips-box" style="margin-top:32px">
+        <div class="tips-box-title">Para guindastes e caminhões:</div>
+        <ul class="tips-list">
+          <li>Qual equipamento ou marca você tem interesse (ex: TKA, PHD, Argos, HYVA)</li>
+          <li>Capacidade de içamento que precisa — em toneladas</li>
+          <li>Se já tem o caminhão (marca, modelo e ano)</li>
+          <li>Alcance de lança que precisa — em metros</li>
+          <li>Cidade / estado de entrega ou instalação</li>
+        </ul>
+      </div>
+
+      <div class="tips-box" style="margin-top:16px">
+        <div class="tips-box-title">Para carrocerias:</div>
+        <ul class="tips-list">
+          <li>Tipo de carroceria (carga seca, prancha, graneleira, etc.)</li>
+          <li>Comprimento necessário</li>
+          <li>Chassi do caminhão (marca, modelo)</li>
+          <li>Aplicação — o que vai transportar</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <form id="contactForm" class="contact-form reveal">
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">Nome *</label><input type="text" class="form-input" placeholder="Seu nome completo" required></div>
+        <div class="form-group"><label class="form-label">Empresa</label><input type="text" class="form-input" placeholder="Razão social ou nome fantasia"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">WhatsApp / Telefone *</label><input type="tel" class="form-input" placeholder="(00) 00000-0000" required></div>
+        <div class="form-group"><label class="form-label">E-mail</label><input type="email" class="form-input" placeholder="seu@email.com"></div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">O que você precisa? *</label>
+        <select class="form-select" required>
+          <option value="">Selecione uma opção</option>
+          <option>Compra de caminhão + guindaste (estoque disponível)</option>
+          <option>Compra de guindaste avulso</option>
+          <option>Instalação de guindaste no meu caminhão</option>
+          <option>Fabricação de carroceria sob medida</option>
+          <option>Manutenção / assistência técnica</option>
+          <option>Peças originais HYVA</option>
+          <option>Controle remoto para guindaste</option>
+          <option>Outro — vou descrever abaixo</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Descreva sua necessidade</label>
+        <textarea class="form-textarea" placeholder="Ex: Tenho um Ford Cargo 1723 e preciso instalar um guindaste com no mínimo 8 toneladas de capacidade. Trabalho com construção civil em Cuiabá/MT..."></textarea>
+      </div>
+      <button type="submit" class="form-submit">Enviar Solicitação →</button>
+      <p style="font-size:12px;color:rgba(255,255,255,.35);margin-top:12px;line-height:1.5">Após enviar, entraremos em contato pelo WhatsApp ou e-mail informado. Tempo médio de resposta: até 2 horas em dias úteis.</p>
+    </form>
+  </div>
+</section>
+
+<footer class="alre-footer">
+  <a href="index.html" class="footer-logo">
+    <img src="alre-logo.jpeg" alt="Alre Equipamentos">
+    <span class="footer-logo-text">ALRE <span>EQUIP.</span></span>
+  </a>
+  <ul class="footer-links">
+    <li><a href="sobre.html">Sobre</a></li>
+    <li><a href="servicos.html">Serviços</a></li>
+    <li><a href="equipamentos.html">Equipamentos</a></li>
+    <li><a href="carrocerias.html">Carrocerias</a></li>
+    <li><a href="seguranca.html">Segurança</a></li>
+    <li><a href="parcerias.html">Parcerias</a></li>
+    <li><a href="contato.html">Contato</a></li>
+  </ul>
+  <span class="footer-copy">&copy; 2025 Alre Equipamentos · Várzea Grande/MT · (65) 98126-9992</span>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
