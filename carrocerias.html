@@ -4,23 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carrocerias Sob Medida — Alre Equipamentos</title>
-  <meta name="description" content="Fabricação de carrocerias sob medida: prancha, carga seca, graneleira, transporte de máquinas. Alre Equipamentos — Várzea Grande/MT.">
+  <meta name="description" content="Fabricação de carrocerias abertas sob medida: carga seca, graneleira, ferro e madeira. Estrutura reforçada, pintura automotiva. Alre Equipamentos — Várzea Grande/MT.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <style>
-    /* Masonry-style gallery */
-    .gallery-hero{display:grid;grid-template-columns:1.4fr 1fr;gap:3px;margin-bottom:3px}
-    .gallery-hero img{width:100%;height:420px;object-fit:cover;display:block;transition:filter .3s}
-    .gallery-hero img:hover{filter:brightness(1.1)}
+    .gallery-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:3px;margin-bottom:3px}
+    .gallery-grid img{width:100%;height:420px;object-fit:cover;display:block;transition:filter .3s}
+    .gallery-grid img:hover{filter:brightness(1.1)}
     .gallery-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:3px;margin-bottom:3px}
     .gallery-row img{width:100%;height:280px;object-fit:cover;display:block;transition:filter .3s}
     .gallery-row img:hover{filter:brightness(1.1)}
-    .gallery-label{position:relative}
-    .gallery-label figcaption{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,.75));padding:20px 16px 10px;font-size:12px;color:rgba(255,255,255,.8);letter-spacing:.06em;text-transform:uppercase;font-weight:600}
+    .gallery-label{position:relative;margin:0}
+    .gallery-label figcaption{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,.8));padding:20px 16px 10px;font-size:12px;color:rgba(255,255,255,.85);letter-spacing:.06em;text-transform:uppercase;font-weight:600}
+    .tipo-card{background:var(--alre-dark);border-left:3px solid var(--alre-orange);padding:28px 24px}
+    .tipo-title{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:800;color:var(--alre-white);text-transform:uppercase;margin-bottom:8px}
+    .tipo-desc{font-size:13px;color:rgba(255,255,255,.6);line-height:1.65}
+    .tipo-specs{margin-top:12px;display:flex;flex-wrap:wrap;gap:8px}
+    .tipo-spec-tag{display:inline-block;background:rgba(255,84,0,.1);border:1px solid rgba(255,84,0,.2);color:var(--alre-orange);font-size:11px;font-weight:600;padding:3px 10px;letter-spacing:.06em;text-transform:uppercase}
     @media(max-width:760px){
-      .gallery-hero{grid-template-columns:1fr}
-      .gallery-hero img{height:260px}
+      .gallery-grid{grid-template-columns:1fr}
+      .gallery-grid img{height:260px}
       .gallery-row{grid-template-columns:1fr 1fr}
       .gallery-row img{height:200px}
     }
@@ -48,72 +52,90 @@
 <div class="page-header">
   <p class="section-eyebrow">Fabricação própria</p>
   <h1>CARROCERIAS <em>SOB MEDIDA</em></h1>
-  <p>Desenvolvemos carrocerias para qualquer chassi e aplicação. Aço certificado, pintura automotiva, prazo garantido.</p>
+  <p>Fabricamos carrocerias abertas para qualquer chassi e aplicação. Aço certificado, pintura automotiva, prazo garantido.</p>
 </div>
 
-<!-- GALLERY with real photos -->
+<!-- GALERIA -->
 <section style="padding:0">
-  <div class="gallery-hero">
-    <figure class="gallery-label reveal" style="margin:0">
+  <div class="gallery-grid">
+    <figure class="gallery-label reveal">
+      <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=900&q=80" alt="Caminhão com carroceria aberta — Alre Equipamentos" loading="lazy">
+      <figcaption>Carroceria Aberta · Estrutura em Aço</figcaption>
+    </figure>
+    <figure class="gallery-label reveal">
       <img src="img-mb-hyva.jpg" alt="Mercedes-Benz com guindaste HYVA e carroceria Alre" loading="lazy">
       <figcaption>MB 1620 L · Carroceria + Guindaste HYVA</figcaption>
     </figure>
-    <figure class="gallery-label reveal" style="margin:0">
-      <img src="img-carr-hyva.jpg" alt="Carroceria com guindaste HYVA — Alre Equipamentos" loading="lazy">
-      <figcaption>Carroceria prancha · Guindaste HYVA</figcaption>
-    </figure>
   </div>
   <div class="gallery-row">
-    <figure class="gallery-label reveal" style="margin:0">
-      <img src="img-constellation-argos.jpg" alt="VW Constellation com carroceria e Argos" loading="lazy">
-      <figcaption>VW Constellation · Prancha + Argos</figcaption>
+    <figure class="gallery-label reveal">
+      <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=700&q=80" alt="Carroceria de carga seca aberta" loading="lazy">
+      <figcaption>Carga Seca · Lateral fixa</figcaption>
     </figure>
-    <figure class="gallery-label reveal" style="margin:0">
-      <img src="img-prancha-13m.jpg" alt="Carroceria prancha 13m — Alre Equipamentos" loading="lazy">
-      <figcaption>Prancha 13,0 m × 3,20 m</figcaption>
+    <figure class="gallery-label reveal">
+      <img src="img-ford-tka.jpg" alt="Ford Cargo com carroceria e guindaste" loading="lazy">
+      <figcaption>Ford Cargo · Carroceria ferro e prancha</figcaption>
     </figure>
-    <figure class="gallery-label reveal" style="margin:0">
-      <img src="img-vw-phd.jpg" alt="VW Constellation 23.220 com carroceria madeira" loading="lazy">
-      <figcaption>VW 23.220 · Carroceria madeira 7,40 m</figcaption>
+    <figure class="gallery-label reveal">
+      <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=700&q=80" alt="Fabricação de carroceria em aço" loading="lazy">
+      <figcaption>Fabricação · Solda e estrutura em aço</figcaption>
     </figure>
   </div>
 </section>
 
-<!-- TIPOS DE CARROCERIA -->
+<!-- O QUE FABRICAMOS -->
 <section>
   <div class="reveal">
     <p class="section-eyebrow">O que fabricamos</p>
     <h2 class="section-title">TIPOS DE<br>CARROCERIA</h2>
+    <p class="section-body" style="max-width:560px;margin-top:12px">Fabricamos carrocerias abertas — aquelas com proteção lateral em volta da carga. Estrutura robusta em aço, personalizada para o seu chassi e aplicação.</p>
   </div>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px;margin-top:48px">
-    <div class="about-point reveal">
-      <div class="about-point-title">Prancha / Flatbed</div>
-      <div class="about-point-desc">Para transporte de máquinas, estruturas e cargas especiais. Disponível com rampa de acesso e travamento de carga.</div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:48px">
+
+    <div class="tipo-card reveal">
+      <div class="tipo-title">Carga Seca Aberta</div>
+      <div class="tipo-desc">Carroceria com proteção lateral em chapa de aço. Ideal para transporte de materiais de construção, equipamentos e carga geral. Lateral fixa ou com portinhola.</div>
+      <div class="tipo-specs">
+        <span class="tipo-spec-tag">Lateral fixa</span>
+        <span class="tipo-spec-tag">Com portinhola</span>
+        <span class="tipo-spec-tag">Sob medida</span>
+      </div>
     </div>
-    <div class="about-point reveal">
-      <div class="about-point-title">Carga Seca</div>
-      <div class="about-point-desc">Carroceria fechada ou aberta para transporte de cargas diversas. Lateral basculante ou fixa conforme a operação.</div>
+
+    <div class="tipo-card reveal">
+      <div class="tipo-title">Ferro + Madeira</div>
+      <div class="tipo-desc">Estrutura em perfil de aço com assoalho e grades laterais em madeira de lei. Versátil para transporte geral, agronegócio e logística pesada.</div>
+      <div class="tipo-specs">
+        <span class="tipo-spec-tag">Madeira de lei</span>
+        <span class="tipo-spec-tag">Estrutura aço</span>
+        <span class="tipo-spec-tag">Alta durabilidade</span>
+      </div>
     </div>
-    <div class="about-point reveal">
-      <div class="about-point-title">Graneleira</div>
-      <div class="about-point-desc">Para transporte de grãos, areia, brita e outros granéis. Com sistema de basculamento.</div>
+
+    <div class="tipo-card reveal">
+      <div class="tipo-title">Graneleira</div>
+      <div class="tipo-desc">Para transporte de grãos, areia, brita e outros granéis. Laterais altas em chapa de aço com reforço estrutural e sistema de escoamento.</div>
+      <div class="tipo-specs">
+        <span class="tipo-spec-tag">Laterais altas</span>
+        <span class="tipo-spec-tag">Chapa reforçada</span>
+        <span class="tipo-spec-tag">Agronegócio</span>
+      </div>
     </div>
-    <div class="about-point reveal">
-      <div class="about-point-title">Ferro + Madeira</div>
-      <div class="about-point-desc">Estrutura em aço com assoalho de madeira. Versátil para transporte geral e logística pesada.</div>
+
+    <div class="tipo-card reveal">
+      <div class="tipo-title">Sob Encomenda</div>
+      <div class="tipo-desc">Projeto personalizado para qualquer aplicação específica. Nos diz o modelo do chassi, a carga e o que precisa — a gente projeta e fabrica.</div>
+      <div class="tipo-specs">
+        <span class="tipo-spec-tag">Qualquer chassi</span>
+        <span class="tipo-spec-tag">Projeto técnico</span>
+        <span class="tipo-spec-tag">Consulte-nos</span>
+      </div>
     </div>
-    <div class="about-point reveal">
-      <div class="about-point-title">Transporte de Máquinas</div>
-      <div class="about-point-desc">Projeto especial com rampa, amarração reforçada e dimensões personalizadas para escavadeiras e tratores.</div>
-    </div>
-    <div class="about-point reveal">
-      <div class="about-point-title">Sob Encomenda</div>
-      <div class="about-point-desc">Qualquer projeto especial. Nos diz o que precisa que a gente projeta e fabrica.</div>
-    </div>
+
   </div>
 </section>
 
-<!-- PROCESS -->
+<!-- PROCESSO -->
 <section style="background:var(--alre-dark)">
   <div class="reveal">
     <p class="section-eyebrow">Como funciona</p>
@@ -133,7 +155,7 @@
     <div class="service-card reveal" style="border-top:none;padding-top:0">
       <div class="service-num">03</div>
       <div class="service-title">Fabricação</div>
-      <div class="service-desc">Soldagem e montagem com controle de qualidade contínuo.</div>
+      <div class="service-desc">Soldagem e montagem com controle de qualidade contínuo em nossa oficina.</div>
     </div>
     <div class="service-card reveal" style="border-top:none;padding-top:0">
       <div class="service-num">04</div>

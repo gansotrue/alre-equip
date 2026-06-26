@@ -91,6 +91,17 @@
     .load-table tr:last-child td{border-bottom:none}
     .load-table td:first-child{color:#4a9fd4;font-weight:600}
 
+
+    /* ── ESTOQUE BADGE ── */
+    .stock-row{display:flex;align-items:center;gap:12px;margin:20px 0;padding:14px 16px;background:rgba(74,159,212,0.06);border:1px solid rgba(74,159,212,0.15)}
+    .stock-label{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.4)}
+    .stock-num{font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:900;color:#4a9fd4;line-height:1}
+    .stock-unit{font-size:11px;color:rgba(255,255,255,.35);text-transform:uppercase;letter-spacing:.08em}
+    .stock-dot{width:8px;height:8px;border-radius:50%;background:#4a9fd4;flex-shrink:0}
+    .stock-dot.zero{background:#555}
+    input.stock-input{background:transparent;border:none;border-bottom:2px solid #4a9fd4;color:#4a9fd4;font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:900;width:48px;text-align:center;outline:none;padding:0 2px;-moz-appearance:textfield}
+    input.stock-input::-webkit-inner-spin-button,input.stock-input::-webkit-outer-spin-button{-webkit-appearance:none}
+
     .grimaldi-cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
     .btn-grimaldi{display:inline-flex;align-items:center;gap:8px;background:#1a4a7a;color:#fff;font-size:12px;font-weight:700;padding:11px 22px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:background .2s;border:1px solid #2a6aaa}
     .btn-grimaldi:hover{background:#235c96}
@@ -128,152 +139,9 @@
 </nav>
 
 <div class="page-header">
-  <p class="section-eyebrow">Pronta entrega · Várzea Grande/MT</p>
-  <h1>ESTOQUE <em>DISPONÍVEL</em></h1>
-  <p>Caminhões com guindaste, guindastes avulsos e linha completa Grimaldi. Especificações técnicas reais — sem enrolação.</p>
-</div>
-
-<!-- ─────────────────────────────────────────
-     CAMINHÕES COM GUINDASTE
-────────────────────────────────────────── -->
-<div class="section-divider">
-  <p class="section-eyebrow">Caminhões completos</p>
-  <h2 class="section-title">CAMINHÕES<br>COM GUINDASTE MUNCK</h2>
-  <p class="section-body" style="max-width:560px">Pronto para trabalhar. Caminhão + guindaste + carroceria instalados e revisados.</p>
-</div>
-
-<!-- 1 · Mercedes + Argos -->
-<div class="equip-detail reveal">
-  <div class="equip-detail-img">
-    <img src="img-mercedes-argos.jpg" alt="Mercedes-Benz Axor 1718 com Munck Argos 20.5">
-  </div>
-  <div class="equip-detail-info">
-    <span class="equip-tag">Caminhão + Guindaste · Disponível</span>
-    <div class="equip-name">Mercedes-Benz Axor 1718<br>+ Munck Argos 20.5</div>
-    <div class="equip-sub">Caminhão 2009 · Guindaste Argos 2013</div>
-    <div class="equip-desc">Robusto Mercedes-Benz Axor MB 1718 equipado com guindaste Munck Argos 20.5 de alta performance. Ideal para logística pesada, obras civis e serviços industriais que demandam versatilidade e confiabilidade.</div>
-    <table class="spec-table">
-      <tr><td>Guindaste</td><td>Argos 20.5</td></tr>
-      <tr><td>Ano do guindaste</td><td>2013</td></tr>
-      <tr><td>Lanças</td><td>3 Hidráulicas + 2 Manuais (3H + 2M)</td></tr>
-      <tr><td>Capacidade a 4 m</td><td>~5 toneladas</td></tr>
-      <tr><td>Alcance máximo</td><td>16 metros</td></tr>
-      <tr><td>Caminhão</td><td>Mercedes-Benz Axor 1718</td></tr>
-      <tr><td>Ano do caminhão</td><td>2009</td></tr>
-      <tr><td>Carroceria</td><td>6 metros</td></tr>
-    </table>
-    <a href="contato.html" class="equip-cta">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.88 9.64a19.79 19.79 0 01-3.07-8.67A2 2 0 012.77 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.64a16 16 0 006.29 6.29l1.1-1.1a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-      Solicitar Orçamento
-    </a>
-  </div>
-</div>
-
-<!-- 2 · Ford + TKA -->
-<div class="equip-detail reveal">
-  <div class="equip-detail-img">
-    <img src="img-ford-tka.jpg" alt="Ford Cargo 1723 com Munck TKA 20.700">
-  </div>
-  <div class="equip-detail-info">
-    <span class="equip-tag">Caminhão + Guindaste · Disponível</span>
-    <div class="equip-name">Ford Cargo 1723<br>+ Munck TKA 20.700</div>
-    <div class="equip-sub">Caminhão 2014 · Guindaste TKA 2024</div>
-    <div class="equip-desc">Ford Cargo 1723 na cor branca com guindaste TKA 20.700 2024 — guindaste zero km instalado. Controle remoto incluso. Carroceria de ferro e prancha com 6,20 m. Ar condicionado.</div>
-    <table class="spec-table">
-      <tr><td>Guindaste</td><td>TKA 20.700</td></tr>
-      <tr><td>Ano do guindaste</td><td>2024 (zero km)</td></tr>
-      <tr><td>Capacidade a 4 m</td><td>~5 toneladas</td></tr>
-      <tr><td>Alcance máximo</td><td>16 metros</td></tr>
-      <tr><td>Caminhão</td><td>Ford Cargo 1723</td></tr>
-      <tr><td>Ano do caminhão</td><td>2014</td></tr>
-      <tr><td>Carroceria</td><td>6,20 m · ferro e prancha 5 cm</td></tr>
-      <tr><td>Extras</td><td>Ar condicionado · Controle remoto</td></tr>
-    </table>
-    <a href="contato.html" class="equip-cta">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.88 9.64a19.79 19.79 0 01-3.07-8.67A2 2 0 012.77 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.64a16 16 0 006.29 6.29l1.1-1.1a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-      Solicitar Orçamento
-    </a>
-  </div>
-</div>
-
-<!-- 3 · VW + PHD -->
-<div class="equip-detail reveal">
-  <div class="equip-detail-img">
-    <img src="img-vw-phd.jpg" alt="VW Constellation 23.220 com Munck PHD 42.007">
-  </div>
-  <div class="equip-detail-info">
-    <span class="equip-tag">Caminhão + Guindaste · Disponível</span>
-    <div class="equip-name">VW Constellation 23.220<br>+ Munck PHD 42.007</div>
-    <div class="equip-sub">Caminhão 2005 · Com controle remoto</div>
-    <div class="equip-desc">VW Constellation 23.220 na cor preta com guindaste PHD 42.007 e controle remoto de alta precisão. Maior capacidade de carga e alcance do estoque — ideal para içamento pesado e construção civil.</div>
-    <table class="spec-table">
-      <tr><td>Guindaste</td><td>PHD 42.007</td></tr>
-      <tr><td>Capacidade a 4 m</td><td>~9,5 toneladas</td></tr>
-      <tr><td>Alcance máximo</td><td>21 metros</td></tr>
-      <tr><td>Caminhão</td><td>VW Constellation 23.220</td></tr>
-      <tr><td>Ano do caminhão</td><td>2005</td></tr>
-      <tr><td>Carroceria</td><td>7,40 m · ferro e prancha de madeira</td></tr>
-      <tr><td>Extras</td><td>Controle remoto de alta precisão</td></tr>
-    </table>
-    <a href="contato.html" class="equip-cta">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.88 9.64a19.79 19.79 0 01-3.07-8.67A2 2 0 012.77 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.64a16 16 0 006.29 6.29l1.1-1.1a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-      Solicitar Orçamento
-    </a>
-  </div>
-</div>
-
-<!-- ─────────────────────────────────────────
-     GUINDASTES AVULSOS
-────────────────────────────────────────── -->
-<div class="section-divider" style="margin-top:2px">
-  <p class="section-eyebrow">Para instalar no seu caminhão</p>
-  <h2 class="section-title">GUINDASTES<br>AVULSOS</h2>
-  <p class="section-body" style="max-width:560px">Guindaste sem caminhão. Você já tem o chassi — a gente instala o equipamento certo para o seu trabalho.</p>
-</div>
-
-<div class="avulso-grid">
-  <!-- Palfinger MD 12005 -->
-  <div class="avulso-card reveal">
-    <div class="avulso-card-img">
-      <img src="img-palfinger.jpg" alt="Guindaste Palfinger MD 12005">
-    </div>
-    <div class="avulso-card-body">
-      <span class="equip-tag avulso">Guindaste Avulso</span>
-      <div class="equip-name">Palfinger<br>MD 12005</div>
-      <div class="equip-sub">Ano 2015</div>
-      <div class="equip-desc">Qualidade europeia reconhecida mundialmente. Design compacto, alta durabilidade e excelente custo-benefício. Indicado para caminhões de médio porte com necessidade de içamento frequente.</div>
-      <table class="spec-table">
-        <tr><td>Marca</td><td>Palfinger</td></tr>
-        <tr><td>Modelo</td><td>MD 12005</td></tr>
-        <tr><td>Ano</td><td>2015</td></tr>
-        <tr><td>Lanças</td><td>3 Hidráulicas + 2 Manuais</td></tr>
-        <tr><td>Capacidade nominal</td><td>12 toneladas/metro</td></tr>
-        <tr><td>Alcance máximo</td><td>15 metros</td></tr>
-        <tr><td>Origem</td><td>Qualidade europeia</td></tr>
-      </table>
-      <a href="contato.html" class="equip-cta">Solicitar Orçamento</a>
-    </div>
-  </div>
-
-  <!-- Constellation + Argos -->
-  <div class="avulso-card reveal">
-    <div class="avulso-card-img">
-      <img src="img-constellation-argos.jpg" alt="VW Constellation com Argos">
-    </div>
-    <div class="avulso-card-body">
-      <span class="equip-tag avulso">Guindaste Avulso</span>
-      <div class="equip-name">Munck Argos<br>Linha Premium</div>
-      <div class="equip-sub">Disponível para instalação</div>
-      <div class="equip-desc">Guindastes Argos para instalação em caminhões de médio e grande porte. Excelente custo-benefício nacional com capacidades que atendem a maioria das operações de içamento urbano e rural.</div>
-      <table class="spec-table">
-        <tr><td>Marca</td><td>Argos</td></tr>
-        <tr><td>Aplicação</td><td>Caminhões médio/grande porte</td></tr>
-        <tr><td>Disponibilidade</td><td>Consulte modelos em estoque</td></tr>
-        <tr><td>Instalação</td><td>Inclusa · Várzea Grande/MT</td></tr>
-      </table>
-      <a href="contato.html" class="equip-cta">Consultar Disponibilidade</a>
-    </div>
-  </div>
+  <p class="section-eyebrow">Guindastes Grimaldi · Várzea Grande/MT</p>
+  <h1>LINHA <em>GRIMALDI</em></h1>
+  <p>Linha completa de guindastes GRT — do 8.000 ao 52.600 kg.m. Especificações técnicas reais extraídas dos catálogos oficiais. Consulte disponibilidade em estoque.</p>
 </div>
 
 <!-- ═══════════════════════════════════════════════════════
@@ -356,6 +224,16 @@
         <tr><td>PBT Mínimo</td><td>7.000 kg</td></tr>
         <tr><td>Peso do Equipamento</td><td>1.350 kg</td></tr>
       </table>
+            <div class="stock-row">
+        <div class="stock-dot" id="dot-grt8000"></div>
+        <div>
+          <div class="stock-label">Unidades em estoque</div>
+          <div style="display:flex;align-items:baseline;gap:6px">
+            <input class="stock-input" id="stock-grt8000" type="number" min="0" max="99" value="0" title="Altere a quantidade em estoque">
+            <span class="stock-unit">unid.</span>
+          </div>
+        </div>
+      </div>
       <div class="grimaldi-cta-row">
         <a href="contato.html" class="equip-cta" style="margin-top:0">Solicitar Cotação</a>
         <a href="https://wa.me/5565981269992?text=Olá! Tenho interesse no Grimaldi GRT 8.000. Pode me enviar mais informações?" target="_blank" class="btn-grimaldi">WhatsApp</a>
@@ -403,6 +281,16 @@
         <tr><td>PBT Mínimo</td><td>10.000 kg</td></tr>
         <tr><td>Peso do Equipamento</td><td>2.300 kg</td></tr>
       </table>
+            <div class="stock-row">
+        <div class="stock-dot" id="dot-grt12600"></div>
+        <div>
+          <div class="stock-label">Unidades em estoque</div>
+          <div style="display:flex;align-items:baseline;gap:6px">
+            <input class="stock-input" id="stock-grt12600" type="number" min="0" max="99" value="0" title="Altere a quantidade em estoque">
+            <span class="stock-unit">unid.</span>
+          </div>
+        </div>
+      </div>
       <div class="grimaldi-cta-row">
         <a href="contato.html" class="equip-cta" style="margin-top:0">Solicitar Cotação</a>
         <a href="https://wa.me/5565981269992?text=Olá! Tenho interesse no Grimaldi GRT 12.600. Pode me enviar mais informações?" target="_blank" class="btn-grimaldi">WhatsApp</a>
@@ -450,6 +338,16 @@
         <tr><td>Reservatório</td><td>80 L</td></tr>
         <tr><td>PBT Mínimo</td><td>13.000 kg</td></tr>
       </table>
+            <div class="stock-row">
+        <div class="stock-dot" id="dot-grt16600"></div>
+        <div>
+          <div class="stock-label">Unidades em estoque</div>
+          <div style="display:flex;align-items:baseline;gap:6px">
+            <input class="stock-input" id="stock-grt16600" type="number" min="0" max="99" value="0" title="Altere a quantidade em estoque">
+            <span class="stock-unit">unid.</span>
+          </div>
+        </div>
+      </div>
       <div class="grimaldi-cta-row">
         <a href="contato.html" class="equip-cta" style="margin-top:0">Solicitar Cotação</a>
         <a href="https://wa.me/5565981269992?text=Olá! Tenho interesse no Grimaldi GRT 16.600. Pode me enviar mais informações?" target="_blank" class="btn-grimaldi">WhatsApp</a>
@@ -494,6 +392,16 @@
         <tr><td>Torque de Giro</td><td>4,61 tf.m</td></tr>
         <tr><td>Ângulo de Giro</td><td>367°</td></tr>
       </table>
+            <div class="stock-row">
+        <div class="stock-dot" id="dot-grt20600"></div>
+        <div>
+          <div class="stock-label">Unidades em estoque</div>
+          <div style="display:flex;align-items:baseline;gap:6px">
+            <input class="stock-input" id="stock-grt20600" type="number" min="0" max="99" value="0" title="Altere a quantidade em estoque">
+            <span class="stock-unit">unid.</span>
+          </div>
+        </div>
+      </div>
       <div class="grimaldi-cta-row">
         <a href="contato.html" class="equip-cta" style="margin-top:0">Solicitar Cotação</a>
         <a href="https://wa.me/5565981269992?text=Olá! Tenho interesse no Grimaldi GRT 20.600. Pode me enviar mais informações?" target="_blank" class="btn-grimaldi">WhatsApp</a>
@@ -543,6 +451,16 @@
         <tr><td>PBT Mínimo</td><td>16.000 kg</td></tr>
         <tr><td>Peso do Equipamento</td><td>3.000 kg</td></tr>
       </table>
+            <div class="stock-row">
+        <div class="stock-dot" id="dot-grt26600"></div>
+        <div>
+          <div class="stock-label">Unidades em estoque</div>
+          <div style="display:flex;align-items:baseline;gap:6px">
+            <input class="stock-input" id="stock-grt26600" type="number" min="0" max="99" value="0" title="Altere a quantidade em estoque">
+            <span class="stock-unit">unid.</span>
+          </div>
+        </div>
+      </div>
       <div class="grimaldi-cta-row">
         <a href="contato.html" class="equip-cta" style="margin-top:0">Solicitar Cotação</a>
         <a href="https://wa.me/5565981269992?text=Olá! Tenho interesse no Grimaldi GRT 26.600. Pode me enviar mais informações?" target="_blank" class="btn-grimaldi">WhatsApp</a>
@@ -590,6 +508,16 @@
         <tr><td>Pressão de Trabalho</td><td>280 bar</td></tr>
         <tr><td>Reservatório</td><td>100 L</td></tr>
       </table>
+            <div class="stock-row">
+        <div class="stock-dot" id="dot-grt30600"></div>
+        <div>
+          <div class="stock-label">Unidades em estoque</div>
+          <div style="display:flex;align-items:baseline;gap:6px">
+            <input class="stock-input" id="stock-grt30600" type="number" min="0" max="99" value="0" title="Altere a quantidade em estoque">
+            <span class="stock-unit">unid.</span>
+          </div>
+        </div>
+      </div>
       <div class="grimaldi-cta-row">
         <a href="contato.html" class="equip-cta" style="margin-top:0">Solicitar Cotação</a>
         <a href="https://wa.me/5565981269992?text=Olá! Tenho interesse no Grimaldi GRT 30.600. Pode me enviar mais informações?" target="_blank" class="btn-grimaldi">WhatsApp</a>
@@ -639,6 +567,16 @@
         <tr><td>Reservatório</td><td>100 L</td></tr>
         <tr><td>PBT Mínimo</td><td>22.000 kg</td></tr>
       </table>
+            <div class="stock-row">
+        <div class="stock-dot" id="dot-grt40600"></div>
+        <div>
+          <div class="stock-label">Unidades em estoque</div>
+          <div style="display:flex;align-items:baseline;gap:6px">
+            <input class="stock-input" id="stock-grt40600" type="number" min="0" max="99" value="0" title="Altere a quantidade em estoque">
+            <span class="stock-unit">unid.</span>
+          </div>
+        </div>
+      </div>
       <div class="grimaldi-cta-row">
         <a href="contato.html" class="equip-cta" style="margin-top:0">Solicitar Cotação</a>
         <a href="https://wa.me/5565981269992?text=Olá! Tenho interesse no Grimaldi GRT 40.600. Pode me enviar mais informações?" target="_blank" class="btn-grimaldi">WhatsApp</a>
@@ -686,6 +624,16 @@
         <tr><td>Ângulo de Giro</td><td>367°</td></tr>
         <tr><td>Pressão de Trabalho</td><td>280 bar</td></tr>
       </table>
+            <div class="stock-row">
+        <div class="stock-dot" id="dot-grt46600"></div>
+        <div>
+          <div class="stock-label">Unidades em estoque</div>
+          <div style="display:flex;align-items:baseline;gap:6px">
+            <input class="stock-input" id="stock-grt46600" type="number" min="0" max="99" value="0" title="Altere a quantidade em estoque">
+            <span class="stock-unit">unid.</span>
+          </div>
+        </div>
+      </div>
       <div class="grimaldi-cta-row">
         <a href="contato.html" class="equip-cta" style="margin-top:0">Solicitar Cotação</a>
         <a href="https://wa.me/5565981269992?text=Olá! Tenho interesse no Grimaldi GRT 46.600. Pode me enviar mais informações?" target="_blank" class="btn-grimaldi">WhatsApp</a>
@@ -735,6 +683,16 @@
         <tr><td>Reservatório</td><td>160 L</td></tr>
         <tr><td>Espaço para Montagem</td><td>1,41 m</td></tr>
       </table>
+            <div class="stock-row">
+        <div class="stock-dot" id="dot-grt52600"></div>
+        <div>
+          <div class="stock-label">Unidades em estoque</div>
+          <div style="display:flex;align-items:baseline;gap:6px">
+            <input class="stock-input" id="stock-grt52600" type="number" min="0" max="99" value="0" title="Altere a quantidade em estoque">
+            <span class="stock-unit">unid.</span>
+          </div>
+        </div>
+      </div>
       <div class="grimaldi-cta-row">
         <a href="contato.html" class="equip-cta" style="margin-top:0">Solicitar Cotação</a>
         <a href="https://wa.me/5565981269992?text=Olá! Tenho interesse no Grimaldi GRT 52.600. Pode me enviar mais informações?" target="_blank" class="btn-grimaldi">WhatsApp</a>
@@ -766,58 +724,16 @@
 
 </div><!-- /grimaldi-catalog -->
 
-<!-- NOTA SOBRE VALORES -->
+<!-- CTA FINAL -->
 <section style="background:#111;padding:40px 5vw;border-top:2px solid var(--alre-orange)">
   <div style="display:flex;align-items:center;gap:24px;flex-wrap:wrap">
     <div style="font-family:'Barlow Condensed',sans-serif;font-size:clamp(20px,2.5vw,32px);font-weight:800;color:var(--alre-orange);text-transform:uppercase">Não publicamos preços.</div>
-    <p style="color:rgba(255,255,255,.7);font-size:14px;flex:1;min-width:240px">Cada equipamento tem condições de negociação únicas. Entre em contato e receba uma proposta direta — sem burocracia.</p>
+    <p style="color:rgba(255,255,255,.7);font-size:14px;flex:1;min-width:240px">Cada equipamento tem condições de negociação únicas. Entre em contato e receba uma proposta direta.</p>
     <div style="display:flex;gap:12px;flex-wrap:wrap">
       <a href="https://wa.me/5565981269992" target="_blank" rel="noopener" class="equip-cta">WhatsApp: (65) 98126-9992</a>
       <a href="contato.html" class="btn-ghost" style="display:inline-block;padding:12px 24px">Formulário de Orçamento</a>
     </div>
   </div>
-</section>
-
-<!-- TAMBÉM TRABALHAMOS COM -->
-<section style="background:var(--alre-dark)">
-  <div class="reveal">
-    <p class="section-eyebrow">Outras marcas</p>
-    <h2 class="section-title">TAMBÉM TRABALHAMOS COM</h2>
-    <p class="section-body" style="max-width:600px;margin-top:12px">Além do estoque disponível, trabalhamos com venda e instalação das principais marcas do mercado. Consulte disponibilidade.</p>
-  </div>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px;margin-top:48px">
-    <div class="about-point reveal">
-      <div class="about-point-title">HYVA</div>
-      <div class="about-point-desc">Representante oficial. Guindastes, kits hidráulicos e peças originais holandesas.</div>
-    </div>
-    <div class="about-point reveal">
-      <div class="about-point-title">GRIMALDI</div>
-      <div class="about-point-desc">Linha GRT completa — do 8.000 ao 52.600 kg.m. Catálogos técnicos disponíveis.</div>
-    </div>
-    <div class="about-point reveal">
-      <div class="about-point-title">TKA</div>
-      <div class="about-point-desc">Linha completa de guindastes articulados nacionais de alta performance.</div>
-    </div>
-    <div class="about-point reveal">
-      <div class="about-point-title">PHD</div>
-      <div class="about-point-desc">Guindastes robustos para operações pesadas e de grande alcance.</div>
-    </div>
-    <div class="about-point reveal">
-      <div class="about-point-title">Argos</div>
-      <div class="about-point-desc">Guindastes Munck para médio e grande porte com excelente custo-benefício.</div>
-    </div>
-    <div class="about-point reveal">
-      <div class="about-point-title">Palfinger</div>
-      <div class="about-point-desc">Qualidade europeia para aplicações que exigem precisão e durabilidade.</div>
-    </div>
-  </div>
-</section>
-
-<section style="background:var(--alre-orange);text-align:center">
-  <p class="section-eyebrow" style="color:rgba(0,0,0,.6)">Não encontrou o que precisa?</p>
-  <h2 class="section-title" style="color:#000;margin:0 auto 16px">A GENTE BUSCA O EQUIPAMENTO CERTO PARA VOCÊ</h2>
-  <p style="color:rgba(0,0,0,.7);max-width:480px;margin:0 auto 32px;font-size:15px">Diz o que você precisa — marca, capacidade, aplicação — e a gente encontra ou indica a melhor opção do mercado.</p>
-  <a href="contato.html" class="equip-cta" style="background:#000;color:var(--alre-orange);display:inline-flex">Falar com um Consultor</a>
 </section>
 
 <footer class="alre-footer">
@@ -981,6 +897,20 @@ function drawChart(model) {
 
 // Draw first chart on load
 drawChart('grt8000');
+
+// ── STOCK INPUTS ────────────────────────────────────
+document.querySelectorAll('.stock-input').forEach(input => {
+  function updateDot() {
+    const dot = document.getElementById(input.id.replace('stock-','dot-'));
+    if (!dot) return;
+    const val = parseInt(input.value) || 0;
+    dot.classList.toggle('zero', val === 0);
+    dot.style.background = val > 0 ? '#4a9fd4' : '#555';
+  }
+  updateDot();
+  input.addEventListener('input', updateDot);
+});
+
 </script>
 </body>
 </html>
